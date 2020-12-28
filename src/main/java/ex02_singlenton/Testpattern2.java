@@ -20,7 +20,6 @@ public class Testpattern2 {
             Thread t = new Thread(task);
             t.start();
         }
-
+        System.out.println("aa");
     }
-
 }
