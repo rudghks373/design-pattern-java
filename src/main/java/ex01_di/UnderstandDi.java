@@ -1,9 +1,17 @@
-package ex.ex01;
+package ex01_di;
+
+import java.util.Date;
 
 public class UnderstandDi {
 
     public static void main(String[] args) {
+        Date date = new Date();
+        System.out.println(date);
+    }
 
+    public static void getDate(Date d){
+        Date date = d;
+        System.out.println(date);
     }
 
     //강한결합 : 직접생성
