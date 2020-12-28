@@ -1,6 +1,4 @@
-package ex02_singlenton;
-
-import org.apache.commons.logging.Log;
+package me.kyunghwan.designpatternjava.ex02_singlenton_pattern;
 
 public class LogTest2 {
 

@@ -1,4 +1,4 @@
-package ex01_di;
+package me.kyunghwan.designpatternjava.ex01_di;
 
 import java.util.Date;
 
