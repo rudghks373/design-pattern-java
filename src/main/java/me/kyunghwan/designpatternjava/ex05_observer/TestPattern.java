@@ -18,7 +18,6 @@ public class TestPattern {
         controller.setFlag(true);
 
         System.out.println();
-
     }
 
 }
