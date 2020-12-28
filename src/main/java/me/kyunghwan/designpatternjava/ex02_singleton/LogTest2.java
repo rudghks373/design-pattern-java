@@ -1,4 +1,4 @@
-package me.kyunghwan.designpatternjava.ex02_singlenton_pattern;
+package me.kyunghwan.designpatternjava.ex02_singleton;
 
 public class LogTest2 {
 
