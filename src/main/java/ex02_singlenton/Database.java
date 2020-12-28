@@ -7,8 +7,16 @@ public class Database {
 
     private String name;
 
-    public Database(String name) {
-        this.name = name;
+    //private으로 외부에서 객체 생성 불가
+    private Database(String name) {
+//        super();
+//        this.name = name;
+        try {
+            Thread.sleep(100);
+            this.name = name;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static Database getInstance(String name){

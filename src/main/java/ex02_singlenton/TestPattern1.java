@@ -11,7 +11,6 @@ public class TestPattern1 {
         database = Database.getInstance("two");
         System.out.println("This is the "+ database.getName());
 
-        System.out.println("database use");
 
     }
 }
