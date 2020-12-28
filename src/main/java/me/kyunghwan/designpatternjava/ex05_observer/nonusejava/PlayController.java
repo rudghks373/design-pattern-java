@@ -1,4 +1,4 @@
-package me.kyunghwan.designpatternjava.ex05_observer;
+package me.kyunghwan.designpatternjava.ex05_observer.nonusejava;
 
 import java.util.Observable;
 

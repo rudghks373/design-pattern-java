@@ -37,6 +37,20 @@
         Subject 객체의 bCheck 변수의 값이 변경되는지 감시
       - bCheck 변수의 값에 변경되면 update() 메소드에서 
         Subject 의 값이 변경된 것을 감지하고 변경에 따른 필요한 동작을 수행한다.
-    - 자바에서는 Observable 인터페이스로 구현가능    
+    - 자바에서는 Observable 인터페이스로 구현가능 
+    - 자바 내장 옵저버 패턴 단점과 한계
+        - Observable 은 클래스다
+            -   Observable이 클래스기 때문에 서브클래스를 만들어야 한다는 점이 문제
+            -   수퍼클래스를 확장하고 있는 클래스에 Observable의 기능을 추가 할 수 없어
+                재사용성에 제약이 생김
+        - Observable 클랫의 핵심 메소드를 외부에서 호출 할 수 없다.
+            -   Observable API를 살펴보면 setChanged() 메소드가 protected로 선언
+            -   Observable의 서브클래스에만 setChanged() 호출 가능, 결국 직접 어떤
+                클래스를 만들고, Observable의 서브클래스를 인스턴스 변수로 사용하는 방법도 쓸 수없다.
+                이런 디자인은 상속보다는 구성을 사용한다는 디자인원칙에 위배된다.
+        - Androud의 View나 Button등의 위젯의 각종 이벤트를 받을때 쓰인다.
+            -   버튼은 항상 클릭이라는 이벤트가 있으며, 이 이벤트는 OnClickListener 라는 인터페이스로
+                구성되어있다. 즉 버튼이라는 객체가 Publisher가 되고, OnClickListener가 Observer가 된다고
+                볼수 있다. 버튼에서 상태가 변경(클릭) 된다면 OnClickListener로 알려준다.
 
     
