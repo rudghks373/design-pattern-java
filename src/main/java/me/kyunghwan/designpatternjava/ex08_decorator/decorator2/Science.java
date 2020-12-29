@@ -10,7 +10,6 @@ public class Science extends StudentDecorator{
         this.student = student;
     }
 
-
     @Override
     public String getDescription() {
         return student.getDescription() + " Like Science";
