@@ -9,7 +9,7 @@ public class TestPattern2 {
         md1.name = "테스트";
 
         MyData md2 = new MyData();
-        
+
         //md2 와 md1가 인스턴스를 공유하고 있음
         md2 = md1;
 
@@ -23,7 +23,7 @@ public class TestPattern2 {
         md2.name = "전우치";
         md2.xpos = 5;
 
-        
+
     }
 
 }
